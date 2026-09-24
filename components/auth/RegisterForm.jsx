@@ -111,7 +111,6 @@ export default function RegisterForm() {
         <button type="button" onClick={() => setShowPassword(!showPassword)}>
           {showPassword ? "הסתר" : "הצג"}
         </button>
-
       </div>
 
       <div>
@@ -128,8 +127,11 @@ export default function RegisterForm() {
           defaultValue={values.confirmPassword}
           className={inputClass(errors.confirmPassword)}
         />
-          {errors.confirmPassword && (
-          <FieldError id="confirmPassword-error" message={errors.confirmPassword} />
+        {errors.confirmPassword && (
+          <FieldError
+            id="confirmPassword-error"
+            message={errors.confirmPassword}
+          />
         )}
       </div>
 

@@ -7,6 +7,7 @@ import { LogOut } from "lucide-react";
 const navLinks = [
   { href: "/jobs", lable: "המשרות שלי" },
   { href: "/dashboard", lable: "מבט על" },
+  { href: "/assistant", lable: "עוזר AI" },
 ];
 
 export default async function Navbar() {
